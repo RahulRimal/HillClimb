@@ -9,8 +9,6 @@ public class FuelManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D obj)
     {
-        print(obj.gameObject.tag);
-
         if(obj.gameObject.tag == "Player")
         {
             carMovement.fuelAmount = 100f;
